@@ -4,6 +4,14 @@
 
 This repository documents experiments aimed at identifying unusual patterns in rotating-equipment vibration measurements. It explores spectral feature preparation, conventional outlier-detection algorithms, and neural-network approaches. The code originated as exploratory, notebook-driven work: **it is not a production predictive-maintenance system, and it does not demonstrate a validated equipment-failure predictor.**
 
+## Note on Code Availability
+
+This repository contains selected exploratory Python scripts from my vibration-data analysis and anomaly-detection work at Digital Edge Indonesia. **These files are not the complete final working version of the project.**
+
+The original data-preprocessing and statistical-analysis workflows were successfully run in the company's environment. However, the complete working notebooks, supporting datasets, and associated implementation files are company property and are not included in this public repository.
+
+Consequently, some scripts here may require missing input data, earlier notebook state, environment-specific paths, dependencies, or modifications before they can run independently. They are shared to document the statistical and machine-learning approaches explored during the project, **not** as a fully reproducible pipeline, a production deployment, or a validated equipment-failure predictor.
+
 ## Background
 
 Vibration monitoring can help identify changes in rotating machinery. Measurements are often noisy and differ across equipment and operating conditions. Instead of using a single scalar measurement, the scripts investigate **frequency-band peaks**: a frequency and its corresponding vibration amplitude for each measured spectral band.
